@@ -13,6 +13,6 @@ def rename_files_from_dir(folder_path):
     for i, file_name in enumerate(os.listdir(folder_path)): 
         old_path = os.path.join(folder_path, file_name)
         print(old_path)
-        new_path = os.path.join(folder_path, f"{i}_{item_type}")
+        new_path = os.path.join(folder_path, f"{i}_{item_type}.png")
         os.rename(old_path, new_path)
         print(f"Renamed: {old_path} --> {new_path}")
